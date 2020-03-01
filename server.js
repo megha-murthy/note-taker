@@ -5,7 +5,7 @@ const uuid1=require('uuid/v1');
 
 
 const app = express();
-const port= process.env.port || 3008;
+const PORT= process.env.PORT || 3008;
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
@@ -93,6 +93,6 @@ app.get('*',(req,res)=>{
     res.sendFile(path.join(__dirname,'public/index.html'));
 })
 
-app.listen(port,()=>{
-    console.log(`App is running on port number:${port}`);
+app.listen(PORT,()=>{
+    console.log(`App is running on port number:${PORT}`);
 })
