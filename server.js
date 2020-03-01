@@ -5,7 +5,7 @@ const uuid1=require('uuid/v1');
 
 
 const app = express();
-const port= 3008;
+const port= process.env.port || 3008;
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
