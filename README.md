@@ -1,11 +1,11 @@
 # note-taker
 Note Taker Application
 
-Description:
+## Description:
 
 This application is used to write,save and delete user notes. This app uses an express backend to save and retrieve note data from a JSON file.
 
-Usage:
+## Usage:
 
 1. The following HTML routes are created:
 
@@ -25,10 +25,10 @@ Usage:
 - DELETE /api/notes/:id - Receives a query parameter containing the id of a note to delete. In order to delete a note, the ap[plication reads all the notes from the db.json file, removes the note with the given id property, and then rewrites the notes to the db.json file.
  
 
-Technologies:
+## Technologies:
 
 HTML ,CSS, Node.js, Express JS
 
-Screenshots:
+## Screenshot:
 
 ![ ](NoteTaker.png)
